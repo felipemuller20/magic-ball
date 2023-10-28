@@ -36,11 +36,14 @@ class _MagicBallState extends State<MagicBall> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: TextButton(
-        onPressed: () {
-          randomizeResponse();
-        },
-        child: Image.asset('assets/images/ball$ballResponse.png'),
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: TextButton(
+          onPressed: () {
+            randomizeResponse();
+          },
+          child: Image.asset('assets/images/ball$ballResponse.png'),
+        ),
       ),
     );
   }
